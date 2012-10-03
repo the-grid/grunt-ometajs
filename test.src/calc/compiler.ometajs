@@ -1,0 +1,7 @@
+ometa Compiler {
+  comp    = ['num' anything:x]    -> x.toString()
+          | ['add' comp:x comp:y] -> ('(' + x + '+' + y + ')')
+          | ['sub' comp:x comp:y] -> ('(' + x + '-' + y + ')')
+          | ['mul' comp:x comp:y] -> ('(' + x + '*' + y + ')')
+          | ['div' comp:x comp:y] -> ('(' + x + '/' + y + ')')          
+}

@@ -1,0 +1,7 @@
+--require coffee-script
+--require should
+--require assert
+--reporter spec
+--ui bdd
+--growl
+--timeout 200

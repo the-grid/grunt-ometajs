@@ -1,0 +1,216 @@
+
+body {
+  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 60px 50px;
+}
+
+#mocha h1, h2 {
+  margin: 0;
+}
+
+#mocha h1 {
+  margin-top: 0px;
+  font-size: 1em;
+  font-weight: 300;
+  color:  hsl(220, 10%, 20%);  
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#mocha .suite .suite h1 {
+  margin-top: 0;
+  font-size: 1em;
+}
+
+#mocha h2 {
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+html #mocha .suite {
+  
+}
+
+
+#mocha > .suite >  h1 {
+  color:  hsla(220,20%,60%,1);
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: 100;
+
+}
+
+
+
+
+
+#mocha .suite {
+  margin-left: 1em;
+}
+
+#mocha .suite .suite {
+  margin-left: 0px;
+  border-left: 1em solid hsla(100,100%,100%,.5);
+}
+
+#mocha .test {
+  margin-left: 0px;
+  padding-left: 3px;
+  border-top: 1px solid hsla(100,100%,100%,.5);
+  
+}
+
+#mocha .test:hover h2::after {
+  position: relative;
+  top: 0;
+  right: -10px;
+  content: '(view source)';
+  font-size: 1em;
+  font-family: arial;
+  color: #888;
+}
+
+#mocha .test.pending:hover h2::after {
+  content: '(pending)';
+  font-family: arial;
+}
+
+#mocha .test.pass{
+  box-shadow: inset 15px 0 0 hsla(100,100%,80%,.1);
+}
+#mocha .test.pass::before {
+  content: '✓';
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color:                  hsl(100, 80%, 80%);
+  text-shadow:  0 1px 0   hsl(100, 80%, 40%)
+              , 0 -1px 0  hsl(100, 100%, 100%)
+              ;
+}
+
+#mocha .test.pending {
+  color: #0b97c4;
+}
+
+#mocha .test.pending::before {
+  content: '◦';
+  color: #0b97c4;
+}
+
+#mocha .test.fail {
+  color: #c00;
+}
+
+#mocha .test.fail pre {
+  color: black;
+}
+
+#mocha .test.fail::before {
+  content: '✖';
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #c00;
+}
+
+#mocha .test pre.error {
+  color: #c00;
+}
+
+#mocha .test pre {
+  display: inline-block;
+  font: 12px/1.5 monaco, monospace;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-bottom-color: #ddd;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px #eee;
+  background: white;
+}
+
+#error {
+  color: #c00;
+  font-size: 1.5  em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+#stats {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  font-size: 12px;
+  margin: 0;
+  color: #888;
+}
+
+#stats .progress {
+  float: right;
+  padding-top: 0;
+}
+
+#stats em {
+  color: black;
+}
+
+#stats li {
+  display: inline-block;
+  margin: 0 5px;
+  list-style: none;
+  padding-top: 11px;
+}
+
+code .comment { color: #ddd }
+code .init { color: #2F6FAD }
+code .string { color: #5890AD }
+code .keyword { color: #8A6343 }
+code .number { color: #2F6FAD }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mocha > .suite:nth-of-type(1) {
+  -webkit-transform:scale(.4) translateX(1500px) translateY(100px);
+  height: 0px;
+  float: none;
+  opacity: .1;
+}
+body {
+  background: hsl(220,20%,98%); padding: .3em;
+  line-height: 1.8em;
+}
+
+
+
+html body #mocha .suite  {
+  box-shadow:  0 -1px 0px hsla(220,40%,60%,.1);
+  border: 1px solid white;
+  border-bottom: none;
+  padding: .1em .5em;
+}
+
+
+
+html #mocha .suite {
+  background: hsla(220,20%,95%,.2);
+/*  padding: .4em;
+  margin: .1em;
+   m argin-bottom: .3em; */
+  text-shadow: 0 1px white;
+}
+
+
